@@ -23,8 +23,8 @@ public class runnerClass {
     @BeforeClass(alwaysRun = true)
     public void setUpClass() throws Exception {
         testNGCucumberRunner = new TestNGCucumberRunner(this.getClass());
-        File reportDir = new File("./target/reports/");
-        cleanDirectory(reportDir);
+/*        File reportDir = new File("./target/reports/");
+        cleanDirectory(reportDir);*/
     }
 
     @Test(dataProvider = "features")
